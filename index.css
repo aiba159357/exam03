@@ -1,0 +1,75 @@
+
+.first-animation {
+    background-color: blue;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+}
+.first-animation:hover {
+    animation: gb 3s;
+    transform: rotate(2.1);
+}
+
+.second-animation {
+    border: 2px solid red;
+    width: 1000px;
+    height: 150px;
+}
+.circle {
+    border-radius: 999px;
+    background: #c72424;
+    width: 150px;
+    height: 150px;
+    animation: loading 7s infinite;
+}
+
+.third-animation img {
+    width: 200px;
+
+    height: 200px;
+    animation: da 4s infinite;
+
+}
+
+
+@keyframes da {
+    0%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes loading {
+    0%{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    50% {
+        margin-left: 900px;
+        margin-right: 900px;
+    }
+    100% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@keyframes gb {
+    0%{
+        background: #ad3838;
+       
+        
+    }
+    
+    50% {
+        background: #218762;
+        width: 250px;
+        rotate: 180deg;
+        height: 250px;
+    }
+ 
+
+    100%{
+        background: #1833b9;
+    } 
+}
+
